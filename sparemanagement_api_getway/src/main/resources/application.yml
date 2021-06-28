@@ -1,0 +1,12 @@
+
+server:
+  port: 8100
+
+zuul:
+  routes:
+    regester-service:
+      url: http://localhost:8585
+    product-service:
+      url: http://localhost:8586
+    order-service:
+      url: http://localhost:8081
